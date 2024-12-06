@@ -107,14 +107,14 @@ if(!isset($_SESSION["username"]))
 
 		<?php
 
-		$servername = "localhost";
-		$usernameConn = "root";
-		$passwordConn = "";
-		$dbname = "projectmeteor";
-		$port = 3307;
+		
+$host = "projectmeteor.c760aykgwyew.us-east-1.rds.amazonaws.com";
+$port = 3306;
+$dbname = "projectmeteor";
+$username = "root";
+$password = "Naidu8978";
 
-		// Create connection
-		$conn = new mysqli($servername, $usernameConn, $passwordConn, $dbname, $port);
+$conn = new mysqli($host, $username, $password, $dbname, $port);
 			
 			// Checking if we've successfully connected to the database
 			if ($conn->connect_error) {
